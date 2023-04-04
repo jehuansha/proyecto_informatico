@@ -1,8 +1,11 @@
 <html lang="es">
-<meta charset="UTF-8">
+
 
 <head>
-    <title>dog</title>
+    <title>Maridaje</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -14,20 +17,22 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./Estilo/style.css"> 
+    <script src="https://kit.fontawesome.com/62ffbf5e8c.js" crossorigin="anonymous"></script>
 </head> 
 
 <body>
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <!-- Navbar-->
     <div class="container-sm">
         <nav class="navbar navabar-expand-sm bg-light navbar-light"
-            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);"> 
+            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19) ;"> 
             <div class="col-sm-3">
                 <a class="navbar-brand"   href="#">
-                    <!-- todo que esta adentro del H4 son modificaciones de la letra--->
-                    <h4><a style="color: rgb(134, 202, 107);" >D</a><a style="color: rgb(126, 215, 221);">o</a><a style="color:rgb(244, 109, 31);">g</a> 
+                    <!-- todo que esta adentro del H4 son modificaciones de la letra---> 
+                    <img src="./Images/LogoP.svg" alt="" height="90" width="90"><h4><a style="color: rgb(146, 61, 121);" >M</a><a style="color: rgb(146, 61, 121);">a</a><a style="color: rgb(146, 61, 121);">r</a><a style="color: rgb(146, 61, 121);" >i</a><a style="color: rgb(146, 61, 121);" >d</a><a style="color: rgb(146, 61, 121);" >a</a><a style="color: rgb(146, 61, 121);" >j</a><a style="color: rgb(146, 61, 121);" >e</a>
                     <!-- esto de abojo es para dar un mejor estilo a los link -->
-                    <a style="color:grey; font-size: 20px; font-family:sans-serif ; "    href="webb.html">New</a></h4>
+                    <a style="color:rgb(216, 93, 210); font-size: 20px; font-family:sans-serif ; "    href="webb.html">New</a></h4>
 
                 </a> 
             </div>
@@ -35,9 +40,9 @@
             <div class="col-sm-6">
                 <div class="input-group">
                     <div class="input-group-append">
-                        <button type="button" class="btn">Buscar </button>
+                        <button type="button" class="btn">Buscar</button>
                     </div>
-                    <input list="Browsers" class="from-control" placeholder="busqueda">
+                    <input list="Browsers" class="form-control" placeholder="busqueda ">
                     <datalist id="Browsers"> 
                         <option value="Vino Destacado">
                         <option value="Procedencia del Vino">
@@ -47,21 +52,83 @@
                 </div>
             </div>
             <!-- links(enlaces)-->
+            <div class="col-sm-3"> 
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Tipos de vinos </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./Tipos vinos/tinto.html">Vino Tinto</a>
+                            <a class="dropdown-item" href="./Tipos vinos/blanco.html">Vino Blanco</a>
+                            <a class="dropdown-item" href="./Tipos vinos/rosado.html">Vino Rosado</a>
+                            <a class="dropdown-item" href="./Tipos vinos/espumoso.html">Vino Espumoso</a>
+                            <a class="dropdown-item" href="./Tipos vinos/generoso.html">Vino Generoso</a>
+                        </div>   
+                    </li>
+                    <div class="col-sm-3">
+                        <div class="input-group">
+                            <div class="input-group-append">
+                                <button type="button" class="btn"><img src="./Images/carr.png" alt="car"> </button>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Iniciar sesi&oacute;n</a>
+                        <div class="dropdown-menu">
+                            <button id="myBtn">Iniciar sesion</button>
 
-            <div class="col-sm-8">
-              
-            </div>
-        
-        
-            
-            
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Formurario En Del Usuaria Version Fututra</p>
+                                </div>
+
+                            </div>
+
+                            <script>
+                            // Get the modal
+                            var modal = document.getElementById("myModal");
+
+                            // Get the button that opens the modal
+                            var btn = document.getElementById("myBtn");
+
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
+
+                            // When the user clicks the button, open the modal 
+                            btn.onclick = function() {
+                                modal.style.display = "block";
+                            }
+
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function() {
+                                modal.style.display = "none";
+                            }
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function(event) {
+                                if (event.target == modal) {
+                                     modal.style.display = "none";
+                                }
+                            }
+                            </script>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>      
         </nav> 
     </div> 
 
 
     <div class="container-sm p-3 my-3 "> 
+        <!-- Carrusel -->
         <div id="demo" class="carousel slide" data-ride="carousel">
-             <!-- Carrusel -->
+             
             <ul class="carousel-indicators">
                 <li data-targe="#demo" data-slide_to="0" class="active"></li>
                 <li data-targe="#demo" data-slide_to="1"></li>
@@ -70,7 +137,7 @@
             <!-- Presentacion de imagenes -->
             <div class="carousel-inner"> 
                 <div class="carousel-item active" >
-                    <a href="/.Newtestt/vin1.html"> <img class="d-block mx-auto"   src="./Images/vinio1.jpg" alt=""  width="900"></a>
+                    <a href="./Tipos vinos/rosado.html"> <img class="d-block mx-auto"   src="./Images/principal.png" alt=""  ></a>
                     <div class="carousel-caption d-none d-md-block">
                         <h2></h2>
 
@@ -78,7 +145,7 @@
                 </div>
 
                 <div class="carousel-item">
-                    <a href="./NewTestt/vin2.html"> <img class="d-block mx-auto" src="./Images/vino2.jpg" alt=""  width="800"></a> 
+                    <a href="./Tipos vinos/espumoso.html"> <img class="d-block mx-auto" src="./Images/principal2.png" alt=""  ></a> 
                     <div class="carousel-caption d-none d-md-block">
                         <head> </head>
 
@@ -86,7 +153,7 @@
                  </div>
              
                 <div class="carousel-item">
-                    <a href="./NewTestt/vin3.html"> <img class="d-block mx-auto" src="./Images/vino3.jpg" alt=""  width="900"></a>
+                    <a href="./Tipos vinos/tinto.html"> <img class="d-block mx-auto" src="./Images/vinoT.jpg" alt=""  ></a>
                     <div class="carousel-caption d-none d-md-block">
                         <h2></h2>
                     </div>
@@ -103,8 +170,93 @@
             </a>         
         </div>           
     </div>
- 
+
+    <!-- cuerpo -->
+    <!-- <div class="container-sm p-3 my-3">
+        <div class="row">
+            <div class="container-sm p-3 my-3">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card" style="width:300px">
+                            <img class="card-img-top"  src="./Images/vinoC.jpg" alt="hola">
+                            <div class="cardy-body">
+                                <h4 class="card-title">hola</h4>
+                                <p class="card-text">superr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
     
+    <!-- <div class="imagen-con-titulo">
+        <div style="background-image: url(./Images/vinoC.jpg);"></div>
+        <div class="texto">
+            <h2>titulo</h2>
+            <p>cuerpo</p>
+        </div>
+    </div> -->
+    <h4> Los tres mejores vinos</h4>
+    <!-- card -->
+    <div class="card">
+        <section>
+          <img src="./Images/vinodouble.jpg" alt="">
+          <h2>94 Puntos</h2>
+          <p>Schrader Cellars Cabernet Sauvignon Oakville Double Diamond 2019</p>
+        </section>
+        <section>
+          <img src="./Images/vinobarbi.jpg" alt="">
+          <h2>95 Puntos</h2>
+          <p>Fattoria dei Barbi Brunello di Montalcino Riserva 2016</p>
+        </section>
+        <section>
+          <img src="./Images/vinovilla.jpg" alt="">
+          <h2>96 Puntos </h2>
+          <p>HdV Chardonnay Napa Valley Hyde Vineyard 2019 </p>
+        </section>
+    </div>
+    <!-- imagenes con efectos -->
+    <!-- <div class="foto">
+        <div style="background-image: url(./Images/vinoC.jpg);"></div>
+        <div style="background-image: url(./Images/vinoM.jpg);"></div>
+        <div style="background-image: url(./Images/vinoT.jpg);"></div>
+      
+    </div>   
+    -->
+    <!-- pie de pagina -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="./Images/LogoP.svg" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, aliquid.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, aliquid.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+
+        </div> 
+        <div class="grupo-2">
+            <small>&copy; 2021 <b>SLee Dw</b> - Todos los Derechos Reservados.</small>
+        </div>
+
+    </footer>
 
 
 </body>
