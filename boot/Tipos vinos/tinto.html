@@ -1,8 +1,7 @@
+<!DOCTYPE html>
 <html lang="es">
-
-
 <head>
-    <title>Maridaje</title>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,28 +18,23 @@
         crossorigin="anonymous"></script>
     
     <script src="https://kit.fontawesome.com/62ffbf5e8c.js" crossorigin="anonymous"></script> 
-    <title>
-        La U volvi&oacute; la senda del triunfo ante Huachipato y la UC  con Audax Italiano
-    </title>
-    <link rel="stylesheet" type="text/css" href="./style.css"> 
-
-</head> 
-
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Vino Tinto</title>
+</head>
 <body>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <!-- Navbar-->
     <div class="container-sm">
         <nav class="navbar navabar-expand-sm bg-light navbar-light"
             style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19) ;"> 
             <div class="col-sm-3">
                 <a class="navbar-brand"   href="#">
                     <!-- todo que esta adentro del H4 son modificaciones de la letra---> 
-                    <img src="/Images/LogoP.svg" alt="" height="90" width="90"><h4><a style="color: rgb(146, 61, 121);" >M</a><a style="color: rgb(146, 61, 121);">a</a><a style="color: rgb(146, 61, 121);">r</a><a style="color: rgb(146, 61, 121);" >i</a><a style="color: rgb(146, 61, 121);" >d</a><a style="color: rgb(146, 61, 121);" >a</a><a style="color: rgb(146, 61, 121);" >j</a><a style="color: rgb(146, 61, 121);" >e</a>
+                    <img src="img/LogoP.svg" alt="" height="90" width="90"><h4><a style="color: rgb(146, 61, 121);" >M</a><a style="color: rgb(146, 61, 121);">a</a><a style="color: rgb(146, 61, 121);">r</a><a style="color: rgb(146, 61, 121);" >i</a><a style="color: rgb(146, 61, 121);" >d</a><a style="color: rgb(146, 61, 121);" >a</a><a style="color: rgb(146, 61, 121);" >j</a><a style="color: rgb(146, 61, 121);" >e</a>
                     <!-- esto de abojo es para dar un mejor estilo a los link -->
                     <a style="color:rgb(216, 93, 210); font-size: 20px; font-family: sans-serif;" href="../webb.html">New</a></h4>
-
-                </a> 
-            </div>
+                </a>  
+            </div> 
             <!-- BROWSER-->
             <div class="col-sm-6">
                 <div class="input-group">
@@ -73,93 +67,113 @@
             </div>    
         </nav> 
     </div> 
-    <!--CATEGORIA-->
-    <div class="container p-3 my-3">
-        Vino Tindo 
-    </div>
 
-    <!-- <div class="col-sm-3">
-        <div class="imagen-texto">
-            <img src="/Images/vinoC.jpg" alt="">
-            <p>Hola</p>
-        </div>
-        <div class="col-6">
-            <div class="imagen-texto">
-                <img src="/Images/vinobarbi.jpg" alt="">
-                <p>Hola2</p>
+
+
+
+
+    <header>
+        <h1>Vino Tinto</h1>
+    </header>
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Don Melchor</span>
+                <img src="img/Don.png" alt="" class="img-item">
+                <span class="precio-item">210.000 CL</span>
+                <button class="boton-item">Agregar al Carrito</button>
             </div>
-    </div> -->
-    <!-- test col -->
-    <!-- <div style="display:grid; grid-template-columns: 1fr 1fr 1fr;">
-        <div class="imagen-texto">
-            <img src="/Images/vinoC.jpg" alt="">
-            <p>Hola</p>
+            <div class="item">
+                <span class="titulo-item">Almaviva</span>
+                <img src="img/almaviva.jpg" alt="" class="img-item">
+                <span class="precio-item">272.000 CL</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Amelia</span>
+                <img src="img/amelia.jpg" alt="" class="img-item">
+                <span class="precio-item">18.000 CL</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Terrunyo</span>
+                <img src="img/terrunyo.jpg" alt="" class="img-item">
+                <span class="precio-item">25.000 CL</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Carmín de Peumo</span>
+                <img src="img/carmin.png" alt="" class="img-item">
+                <span class="precio-item">149.990 CL</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Nicolás Catena Zapata</span>
+                <img src="img/nicolas4.png" alt="" class="img-item">
+                <span class="precio-item">76.400 CL</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            
         </div>
-        <div class="imagen-texto">
-            <img src="/Images/vinobarbi.jpg" alt="">
-            <p>Hola2</p>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
         </div>
-        <div>Columna 3</div>
-        <div>Columna 4</div>
-        <div>Columna 5</div>
-        <div>Columna 6</div>
-      </div> -->
-    <!-- <table>
-        <tr>
-          <td>Producto 1</td>
-          <td>Producto 2</td>
-          <td>Producto 3</td>
-        </tr>
-        <tr>
-          <td><img src="/Images/vinobarbi.jpg" alt="Producto 1"></td>
-          <td><img src="ruta-de-la-imagen-2" alt="Producto 2"></td>
-          <td><img src="ruta-de-la-imagen-3" alt="Producto 3"></td>
-        </tr>
-        <tr>
-          <td><span>$99.99</span></td>
-          <td><span>$149.99</span></td>
-          <td><span>$199.99</span></td>
-        </tr>
-    </table> -->
-    <div class="container">
-        <div class="product">
-          <img src="/Images/Don.png" alt="Nombre del producto">
-          <h3>Don Melchor</h3>
-          <p class="price">$99.99</p>
-        </div>
-        <div class="product">
-          <img src="/Images/almaviva.jpg" alt="Nombre del producto">
-          <h3>Almaviva</h3>
-          <p class="price">$99.99</p>
-        </div>
-        <div class="product">
-          <img src="/Images/amelia.jpg" alt="Nombre del producto">
-          <h3>Amelia</h3>
-          <p class="price">$99.99</p>
-        </div>
-        <div class="product">
-          <img src="/Images/terrunyo.jpg" alt="Nombre del producto">
-          <h3>Terrunyo</h3>
-          <p class="price">$99.99</p>
-        </div>
-        <div class="product">
-          <img src="/Images/carmin.png" alt="Nombre del producto">
-          <h3>Carmín de Peumo</h3>
-          <p class="price">$99.99</p>
-        </div>
-        <div class="product">
-          <img src="/Images/nicolas.jpg" alt="Nombre del producto" >
-          <h3>Nicolás Catena Zapata</h3>
-          <p class="price">$99.99</p>
-        </div>
-      </div>
-      
+    </section>
+    <!-- pie de pagina -->
     <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="/Images/LogoP.svg" alt="Logo de SLee Dw">
+                        <img src="img/LogoP.svg" alt="Logo de SLee Dw">
                     </a>
                 </figure>
             </div>
@@ -184,6 +198,5 @@
         </div>
 
     </footer>
-        
-    
 </body>
+</html>
