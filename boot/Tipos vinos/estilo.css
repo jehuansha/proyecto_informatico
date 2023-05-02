@@ -209,7 +209,24 @@ header h1{
 }
 
 
+/* color de fondo  */
+body {
+    background: #FF0099;  
+    background: -webkit-linear-gradient(to right, #493240, #FF0099);  
+    background: linear-gradient(to right, #493240, #FF0099);
+    
+    /* background: #8E0E00;  
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  
+    background: linear-gradient(to right, #1F1C18, #8E0E00); */
+}
 
+/* color de fondo del box */
+.container-sm nav{
+    background: #FF0099;  
+    background: -webkit-linear-gradient(to right, #493240, #FF0099);  
+    background: linear-gradient(to right, #493240, #FF0099);
+
+}
 
 
 
@@ -255,7 +272,9 @@ header h1{
 
 .pie-pagina{
     width: 100%;
-    background-color: #284763;
+    background: #ff0077;  
+    background: -webkit-linear-gradient(to right, #493240, #ff0077);  
+    background: linear-gradient(to right, #493240, #ff0077);
 }
 .pie-pagina .grupo-1{
     width: 100%; 
@@ -302,7 +321,7 @@ header h1{
     color: aqua;
 }
 .pie-pagina .grupo-2 {
-    background-color: #0a1a2a;
+    background-color: #91134d;
     padding: 15px 10px;
     text-align: center;
     color: #fff;

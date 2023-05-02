@@ -10,8 +10,11 @@
 
 .pie-pagina{
     width: 100%;
-    background-color: #284763;
+    background: #ff0077;  
+    background: -webkit-linear-gradient(to right, #493240, #ff0077);  
+    background: linear-gradient(to right, #493240, #ff0077);
 }
+
 .pie-pagina .grupo-1{
     width: 100%; 
     max-width: 1200px;
@@ -57,7 +60,7 @@
     color: aqua;
 }
 .pie-pagina .grupo-2 {
-    background-color: #0a1a2a;
+    background-color: #91134d;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
